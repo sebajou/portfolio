@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './projectpagedetail.module.css';
+import styles from './Projectpagedetail.module.css';
 
 interface ProjectpagedetailProps {}
 

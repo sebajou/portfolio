@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './resumes.module.css';
+import styles from './Resumes.module.css';
 
 interface ResumesProps {}
 

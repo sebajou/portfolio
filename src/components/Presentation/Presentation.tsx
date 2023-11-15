@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './presentation.module.css';
+import styles from './Presentation.module.css';
 
 interface PresentationProps {}
 

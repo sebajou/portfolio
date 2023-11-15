@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './vistcard.module.css';
+import styles from './Vistcard.module.css';
 
 interface VistcardProps {}
 

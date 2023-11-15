@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './services.module.css';
+import styles from './Services.module.css';
 
 interface ServicesProps {}
 

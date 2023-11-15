@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './projectpage.module.css';
+import styles from './Projectpage.module.css';
 
 interface ProjectpageProps {}
 

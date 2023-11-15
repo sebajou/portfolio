@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './links.module.css';
+import styles from './Links.module.css';
 
 interface LinksProps {}
 
