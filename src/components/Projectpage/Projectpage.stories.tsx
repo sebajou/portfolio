@@ -5,7 +5,7 @@ export default {
   title: "Projectpage",
 };
 
-export const Default = () => <Projectpage />;
+export const Default = () => <Projectpage projectName={"string"} />;
 
 Default.story = {
   name: 'default',

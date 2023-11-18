@@ -1,5 +1,5 @@
 /* eslint-disable */
-import Vistcard from './Vistcard';
+import Vistcard from './Visitcard';
 
 export default {
   title: "Vistcard",

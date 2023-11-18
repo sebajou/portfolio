@@ -4,7 +4,7 @@ const LazyProjectpage = lazy(() => import('./Projectpage'));
 
 const Projectpage = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
   <Suspense fallback={null}>
-    <LazyProjectpage {...props} />
+    <LazyProjectpage projectName={"string"} {...props} />
   </Suspense>
 );
 

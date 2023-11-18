@@ -4,7 +4,7 @@ import styles from './Services.module.css';
 interface ServicesProps {}
 
 const Services: FC<ServicesProps> = () => (
-  <div className={styles.Services} data-testid="Services">
+  <div className="h-screen" data-testid="Services">
     Services Component
   </div>
 );
