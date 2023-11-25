@@ -12,7 +12,12 @@
 
   p {
     font-size: text-sm;
-    font-family: "monospace"
+    font-family: "monospace";
+  }
+
+  img {
+    border: none;
+    border-color: transparent;
   }
 
   body {
