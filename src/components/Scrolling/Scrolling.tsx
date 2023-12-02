@@ -20,13 +20,13 @@ const Scrolling: FC<ScrollingProps> = () => (
         </div>
         {Object.values(projectsJson).map((project) => {
         return (
-          <div className="basis-1">
+          <div className="basis-1 m-2 p-2 border rounded-lg border-gray-600">
               <Projectpage 
                 projectName={project.title} 
                 projectSummary={project.summary} 
                 projectUrlImage={project.imageUrl}
                 projectSkills={project.skills}
-                linkGithub={project.linkGithub}
+                linksGithub={project.linksGithub}
                 linkWebsite={project.linkWebsite}
                 />
             </div>

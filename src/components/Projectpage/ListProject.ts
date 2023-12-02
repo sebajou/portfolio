@@ -9,7 +9,7 @@ export const listProjects = {
       `,
       imageUrl: "https://docs.oracle.com/fr/solutions/learn-architect-microservice/img/monolithic_vs_microservice.png",
       skills: ["Microservice", "FastAPI", "Kubernetes", "Node.js", "GraphQL", "NestJS", "RAG LLM", "Chatbot"],
-      linkGithub: "www.github.com/sebajou/",
+      linksGithub: ["back_world_wide_spring", "collector_world_wide_springs", "front_world_wide_spring"],
       linkWebsite: "",
     }, 
     yogurtmaker: {
@@ -21,7 +21,7 @@ export const listProjects = {
       `,
       imageUrl: "",
       skills: ["IoT", "MicroPython", "MicroController"],
-      linkGithub: "www.github.com/sebajou/",
+      linksGithub: ["esp32_yogurt_maker"],
       linkWebsite: "",
     }, 
     portfolio: {
@@ -31,7 +31,7 @@ export const listProjects = {
       `,
       imageUrl: "",
       skills: ["React", "Tailwind"],
-      linkGithub: "www.github.com/sebajou/",
-      linkWebsite: "",
+      linksGithub: ["portfolio"],
+      linkWebsite: "https://sebajou.github.io/portfolio",
     }
   };

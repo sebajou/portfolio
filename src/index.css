@@ -10,7 +10,7 @@
     font-family: "monospace";
   }
 
-  p {
+  p,a  {
     font-size: text-sm;
     font-family: "monospace";
   }

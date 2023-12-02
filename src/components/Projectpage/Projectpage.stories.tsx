@@ -8,7 +8,7 @@ export default {
 export const Default = () => <Projectpage 
   projectName={"string"}
   projectSummary={"string"}
-  projectUrlImage={"string"} projectSkills={[]} linkGithub={"string"} linkWebsite={"string"}  />;
+  projectUrlImage={"string"} projectSkills={[]} linksGithub={[]} linkWebsite={"string"}  />;
 
 Default.story = {
   name: 'default',

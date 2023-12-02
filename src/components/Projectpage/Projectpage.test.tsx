@@ -6,7 +6,7 @@ import Projectpage from './Projectpage';
 describe('<Projectpage />', () => {
   test('it should mount', () => {
     render(<Projectpage 
-      projectName={"string"} projectSummary={"string"} projectUrlImage={"string"} projectSkills={[]} linkGithub={"string"} linkWebsite={"string"}/>);
+      projectName={"string"} projectSummary={"string"} projectUrlImage={"string"} projectSkills={[]} linksGithub={[]} linkWebsite={"string"}/>);
     
     const projectpage = screen.getByTestId('Projectpage');
 
