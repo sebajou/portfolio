@@ -14,22 +14,24 @@ Object.keys(projectsJson).forEach(function(innerAttr, index) {
 });
 
 const Scrolling: FC<ScrollingProps> = () => (
-  <div className='h-screen bg-local bg-emerald-800' data-testid="Scrolling">
+  <div className='bg-local m-2' data-testid="Scrolling">
         <div className="basis-1 bg-lime-600">
           <Presentation/>
         </div>
         {Object.values(projectsJson).map((project) => {
         return (
-          <div className="basis-1 m-2 p-2 border rounded-lg border-gray-600">
-              <Projectpage 
-                projectName={project.title} 
-                projectSummary={project.summary} 
-                projectUrlImage={project.imageUrl}
-                projectSkills={project.skills}
-                linksGithub={project.linksGithub}
-                linkWebsite={project.linkWebsite}
-                />
-            </div>
+            <div className="basis-1 h-auto sm:h-[98vh] border rounded-lg border-gray-600 m-2 p-2">
+              <div className="p-2">
+                <Projectpage 
+                  projectName={project.title} 
+                  projectSummary={project.summary} 
+                  projectUrlImage={project.imageUrl}
+                  projectSkills={project.skills}
+                  linksGithub={project.linksGithub}
+                  linkWebsite={project.linkWebsite}
+                  />
+              </div>
+          </div>
           )})
         }
 
