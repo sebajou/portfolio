@@ -1,33 +1,12 @@
-import React, { FC } from 'react';
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
-interface PresentationProps {}
-
-const Presentation: FC<PresentationProps> = () => (
-
-
-  <div className="flex flex-col h-screen m-5" data-testid="Presentation">
-    <div className='basis-4/12 '>
-      <h1 className='m-5 text-gray-900 font-bold text-6xl text-left'>
-        Hi! Many thinks to be on this page.
-      </h1>
-    </div>
-    <div className='basis-8/12'>
-      <em className='text-4xl text-left'>My name is <strong>Sebastien Jourdan.</strong></em>
-      <div className='flex flex-row'>
-        <div className='basis-8/12 m-4'>
-          <p className='text-2xl text-left align-middle'>
-            I am a Full Stack Developer with MEAN stack or with a Python backend. On microservice architecture, or monolithe architecture. I am also in love with Machine Learning, NLP and especialy RAG LLM. 
-          </p>
-          <p className='text-2xl text-left align-middle'>
-            In this page you will see projects where I work or working on, services which I can do for you, resume and some links. 
-          </p>
-        </div>
-        <div className='flex justify-center items-center basis-4/12'>
-          <svg xmlns="http://www.w3.org/2000/svg"
-            width="135" height="215" stroke-width="1000"
-            viewBox="0 0 335 395">
-            <path id="path881"
-        fill="#86EFAC" stroke="black" stroke-width="4"
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="2.83333in" height="3.78889in"
+     viewBox="0 0 255 341">
+  <path id="path881"
+        fill="none" stroke="black" stroke-width="1"
         d="M 76.02,330.65
            C 76.49,328.08 79.28,320.88 82.21,314.64
              92.72,292.26 94.27,288.46 97.38,277.28
@@ -115,11 +94,4 @@ const Presentation: FC<PresentationProps> = () => (
              63.67,214.54 63.91,215.89 67.78,215.89
              69.91,215.89 72.22,214.34 74.45,211.43
              74.45,211.43 74.45,211.43 74.45,211.43 Z" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-export default Presentation;
+</svg>

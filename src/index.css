@@ -5,13 +5,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira_Code&display=swap");
 
 @layer base {
-  h1 {
+  h1, h2, h3 {
     font-size: text-9xl;
     font-family: "monospace";
   }
 
   p,a  {
     font-size: text-sm;
+    font-family: "monospace";
+  }
+
+  strong, em {
     font-family: "monospace";
   }
 

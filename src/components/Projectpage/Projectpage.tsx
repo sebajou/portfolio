@@ -17,7 +17,7 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
       flex items-center
       w-full m-1 py-1 px-2 
       justify-center  text-white text-center text-base font-semibold
-      bg-gray-300 focus:ring-gray-500 focus:ring-offset-gray-200
+      bg-green-200 focus:ring-green-500 focus:ring-offset-gray-200
       transition ease-in duration-200  shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 
       rounded-lg"
     >
@@ -39,7 +39,7 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
       {props.projectSkills.map((skill) => {
         return <span className="
           inline-block 
-          bg-gray-200 
+          bg-green-200 
           rounded-full 
           text-sm font-semibold text-gray-700
           px-3 py-1 mr-2 mb-2">#{skill}</span>
@@ -53,7 +53,7 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
             w-full
             m-1 py-1 px-2 
             max-w-md 
-            bg-gray-300 hover:bg-gray-700 
+            bg-green-200 hover:bg-green-700 
             focus:ring-gray-500 focus:ring-offset-gray-200 
             text-white text-center text-base font-semibold
             transition ease-in duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 
@@ -75,7 +75,7 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
         w-full
         m-1 py-1 px-2 
         max-w-md 
-        bg-gray-300 hover:bg-gray-700 
+        bg-green-300 hover:bg-green-700 
         focus:ring-gray-500 focus:ring-offset-gray-200 
         text-white text-center text-base font-semibold
         transition ease-in duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 
