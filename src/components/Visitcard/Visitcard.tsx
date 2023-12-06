@@ -1,13 +1,21 @@
 import React, { FC } from 'react';
-import { HashLink } from 'react-router-hash-link';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Services from '../Services/Services'
+import Layout from '../Layout/Layout'
 
 interface VistcardProps {}
 
 const Vistcard: FC<VistcardProps> = () => (
   <div className="flex flex-col bg-gradient-to-r from-green-300 h-screen overflow-hidden" data-testid="Vistcard">
-    <div>
-      <HashLink to="Services#services">Given Services</HashLink>
-    </div>
+    {/*
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="../Services/Services" element={<Services />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    */}
     <div className='basis-6/12 relative'>
       <div className='absolute bottom-1'>
         <h1 className="animate-slide whitespace-nowrap text-gray-900 font-bold text-6xl">Full Stack Developer</h1>
