@@ -12,17 +12,17 @@ const Presentation: FC<PresentationProps> = () => (
       </h1>
     </div>
     <div className='basis-8/12'>
-      <em className='text-4xl text-left'>My name is <strong>Sebastien Jourdan.</strong></em>
+      <em className='text-2xl md:text-4xl text-left'>My name is <strong>Sebastien Jourdan.</strong></em>
       <div className='flex flex-row'>
-        <div className='basis-8/12 m-4'>
-          <p className='text-2xl text-left align-middle'>
+        <div className='md:basis-8/12 m-4'>
+          <p className='text-1xl md:text-2xl text-left align-middle'>
             I am a Full Stack Developer with MEAN stack or with a Python backend. On microservice architecture, or monolithe architecture. I am also in love with Machine Learning, NLP and especialy RAG LLM. 
           </p>
-          <p className='text-2xl text-left align-middle'>
+          <p className='text-1xl md:text-2xl text-left align-middle w-full grow'>
             In this page you will see projects where I work or working on, services which I can do for you, resume and some links. 
           </p>
         </div>
-        <div className='flex justify-center items-center basis-4/12'>
+        <div className='flex justify-center items-center basis-0 md:basis-4/12 invisible md:visible'>
           <svg xmlns="http://www.w3.org/2000/svg"
             width="135" height="215" stroke-width="1000"
             viewBox="0 0 335 395">

@@ -1,10 +1,9 @@
 import React, { FC } from 'react';
-import styles from './Resumes.module.css';
 
 interface ResumesProps {}
 
 const Resumes: FC<ResumesProps> = () => (
-  <div className="h-screen" data-testid="Resumes">
+  <div className="h-screen bg-gradient-to-tl from-green-300 via-white to-white" data-testid="Resumes">
     Resumes Component
   </div>
 );

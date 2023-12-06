@@ -29,7 +29,8 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
       h-48 md:h-auto md:w-48 
       bg-contain bg-no-repeat md:bg-center 
       invisible md:visible" 
-    style={{ backgroundImage: `url(${props.projectUrlImage})`, }} title="Microservice architecture"/>
+    style={{ backgroundImage: `url(${props.projectUrlImage})`, }} title="Microservice architecture">
+    </div>
     <div className="md:basis-8/12 bg-white justify-between leading-normal w-full">
       <p className="grow w-full text-gray-700 text-base p-4">{props.projectSummary}</p>
     </div>
@@ -53,7 +54,7 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
             w-full
             m-1 py-1 px-2 
             max-w-md 
-            bg-green-200 hover:bg-green-700 
+            bg-green-300 hover:bg-green-700 
             focus:ring-gray-500 focus:ring-offset-gray-200 
             text-white text-center text-base font-semibold
             transition ease-in duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 
