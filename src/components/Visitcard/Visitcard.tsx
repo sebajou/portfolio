@@ -1,21 +1,18 @@
 import React, { FC } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Services from '../Services/Services'
-import Layout from '../Layout/Layout'
+import { Link } from "react-router-dom";
 
 interface VistcardProps {}
 
 const Vistcard: FC<VistcardProps> = () => (
   <div className="flex flex-col bg-gradient-to-r from-green-300 h-screen overflow-hidden" data-testid="Vistcard">
-    {/*
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="../Services/Services" element={<Services />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-    */}
+
+    <div> 
+      <nav>
+        <Link to="/services" className="nav-item">Services</Link>
+        <Link to="/resumes" className="nav-item">Resumes</Link>
+      </nav>
+    </div>
+
     <div className='basis-6/12 relative'>
       <div className='absolute bottom-1'>
         <h1 className="animate-slide whitespace-nowrap text-gray-900 font-bold text-6xl">Full Stack Developer</h1>

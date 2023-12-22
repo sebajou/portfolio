@@ -4,6 +4,7 @@ import Projectpage from '../Projectpage/Projectpage';
 import Services from '../Services/Services';
 import Resumes from '../Resumes/Resumes';
 import { listProjects } from '../Projectpage/ListProject'
+import { Route, Routes } from 'react-router-dom';
 
 
 interface ScrollingProps {}
@@ -15,6 +16,12 @@ Object.keys(projectsJson).forEach(function(innerAttr, index) {
 
 const Scrolling: FC<ScrollingProps> = () => (
   <div className='bg-local' data-testid="Scrolling">
+
+      <Routes> 
+        <Route path="/services" element={<Services />}></Route>
+        <Route path="/resumes" element={<Resumes />}></Route>
+      </Routes>
+
         <div className="basis-1">
           <Presentation/>
         </div>
