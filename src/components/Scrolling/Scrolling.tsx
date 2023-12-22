@@ -4,7 +4,6 @@ import Projectpage from '../Projectpage/Projectpage';
 import Services from '../Services/Services';
 import Resumes from '../Resumes/Resumes';
 import { listProjects } from '../Projectpage/ListProject'
-import { Route, Routes } from 'react-router-dom';
 
 
 interface ScrollingProps {}
@@ -15,32 +14,30 @@ Object.keys(projectsJson).forEach(function(innerAttr, index) {
 });
 
 const Scrolling: FC<ScrollingProps> = () => (
-  <div className='bg-local' data-testid="Scrolling">
+  <div className='' data-testid="Scrolling">
 
-      <Routes> 
-        <Route path="/services" element={<Services />}></Route>
-        <Route path="/resumes" element={<Resumes />}></Route>
-      </Routes>
 
         <div className="basis-1">
           <Presentation/>
+        </div >
+        <div className="" id="projects">
+          {Object.values(projectsJson).map((project) => {
+          return (
+              <div className="basis-1 h-auto lg:h-[98vh] border rounded-lg border-gray-600 m-2 p-2" id={project.title}>
+                <div className="p-2">
+                  <Projectpage 
+                    projectName={project.title} 
+                    projectSummary={project.summary} 
+                    projectUrlImage={project.imageUrl}
+                    projectSkills={project.skills}
+                    linksGithub={project.linksGithub}
+                    linkWebsite={project.linkWebsite}
+                    />
+                </div>
+            </div>
+            )})
+          }
         </div>
-        {Object.values(projectsJson).map((project) => {
-        return (
-            <div className="basis-1 h-auto lg:h-[98vh] border rounded-lg border-gray-600 m-2 p-2">
-              <div className="p-2">
-                <Projectpage 
-                  projectName={project.title} 
-                  projectSummary={project.summary} 
-                  projectUrlImage={project.imageUrl}
-                  projectSkills={project.skills}
-                  linksGithub={project.linksGithub}
-                  linkWebsite={project.linkWebsite}
-                  />
-              </div>
-          </div>
-          )})
-        }
 
         <div className="basis-1">
           <Services/>

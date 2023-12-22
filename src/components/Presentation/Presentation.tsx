@@ -5,21 +5,21 @@ interface PresentationProps {}
 const Presentation: FC<PresentationProps> = () => (
 
 
-  <div className="flex flex-col h-screen m-5" data-testid="Presentation">
+  <div className="flex flex-col h-screen m-5" data-testid="Presentation" id="presentation">
     <div className='basis-4/12 '>
-      <h1 className='m-5 text-gray-900 font-bold text-6xl text-left'>
+      <h1 className='m-4 text-gray-900 font-bold text-6xl text-left'>
         Hi! Many thinks to be on this page.
       </h1>
     </div>
     <div className='basis-8/12'>
-      <em className='text-2xl md:text-4xl text-left'>My name is <strong>Sebastien Jourdan.</strong></em>
+      <em className='text-2xl md:text-3xl text-left'>My name is <strong>Sebastien Jourdan.</strong></em>
       <div className='flex flex-row'>
-        <div className='md:basis-8/12 m-4'>
-          <p className='text-1xl md:text-2xl text-left align-middle'>
-            I am a Full Stack Developer with MEAN stack or with a Python backend. On microservice architecture, or monolithe architecture. I am also in love with Machine Learning, NLP and especialy RAG LLM. 
+        <div className='md:basis-8/12 m-3'>
+          <p className='text-base md:text-lg text-left align-middle'>
+            I am a Full Stack Developer proficient in the MEAN stack as well as Python for backend development. I have experience working with both microservice and monolithic architectures. Alongside my expertise in development, I have a strong passion for Machine Learning, particularly in Natural Language Processing (NLP), specifically RAG Language Model (RAG LLM).
           </p>
-          <p className='text-1xl md:text-2xl text-left align-middle w-full grow'>
-            In this page you will see projects where I work or working on, services which I can do for you, resume and some links. 
+          <p className='text-base md:text-lg text-left align-middle w-full grow'>
+            Explore this page to discover projects I have completed or am currently involved in, the array of services I can offer you, my resume, and relevant links for further insights.
           </p>
         </div>
         <div className='flex justify-center items-center basis-0 md:basis-4/12 invisible md:visible'>

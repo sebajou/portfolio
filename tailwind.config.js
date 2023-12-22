@@ -10,6 +10,13 @@ module.exports = {
       sans: ['Fira_Code', ...defaultTheme.fontFamily.sans]
     },
     extend: { 
+      colors: {
+        'bluelagoon': '#61FAF3',
+        'pinklight': '#FA3A75',
+        'bluegreen': '#55FAAD',
+        'orangepink': '#FA7E3C',
+        'flashygreen': '#37FA4D',
+      },
       animation: {
         slide: "slide 8s linear infinite",
       },

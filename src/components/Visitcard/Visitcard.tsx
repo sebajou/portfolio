@@ -1,17 +1,53 @@
 import React, { FC } from 'react';
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+import { listProjects } from '../Projectpage/ListProject'
 
 interface VistcardProps {}
+const projectsJson = listProjects;
+const arr : any[] = []
+Object.keys(projectsJson).forEach(function(innerAttr, index) {
+  arr.push(innerAttr[index]);
+});
 
 const Vistcard: FC<VistcardProps> = () => (
   <div className="flex flex-col bg-gradient-to-r from-green-300 h-screen overflow-hidden" data-testid="Vistcard">
+    <div>
 
-    <div> 
-      <nav>
-        <Link to="/services" className="nav-item">Services</Link>
-        <Link to="/resumes" className="nav-item">Resumes</Link>
-      </nav>
-    </div>
+      <div className="flex items-center"> 
+          <hr className="flex-grow border-t border-black ml-4"/> 
+          <span className="px-3"> 
+            <p><HashLink smooth to={'/presentation#presentation'}>Presentation </HashLink></p>
+          </span> 
+      </div> 
+      <div className="flex items-center"> 
+          <hr className="flex-grow border-t border-black ml-4"/> 
+          <span className="px-3"> 
+            <p><HashLink smooth to={"/projects#projects"}>Projects </HashLink></p>
+          </span> 
+      </div> 
+      {Object.values(projectsJson).map((project) => {
+        return (
+          <div className="flex items-center"> 
+            <hr className="flex-grow border-t border-black ml-4"/> 
+            <span className="px-3"> 
+              <p><HashLink smooth to={`/projects#${project.title}`}>{project.title} </HashLink></p>
+            </span> 
+          </div> 
+          )})
+        }
+        <div className="flex items-center"> 
+            <hr className="flex-grow border-t border-black ml-4"/> 
+            <span className="px-3"> 
+              <p><HashLink smooth to={"/services#services"}>Services </HashLink></p>
+            </span> 
+        </div> 
+        <div className="flex items-center"> 
+            <hr className="flex-grow border-t border-black ml-4"/> 
+            <span className="px-3"> 
+              <p><HashLink smooth to={'/resumes#resumes'}>Resumes </HashLink></p>
+            </span> 
+        </div>       
+      </div>
 
     <div className='basis-6/12 relative'>
       <div className='absolute bottom-1'>
