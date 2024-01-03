@@ -10,7 +10,8 @@ Object.keys(projectsJson).forEach(function(innerAttr, index) {
 });
 
 const Vistcard: FC<VistcardProps> = () => (
-  <div className="flex flex-col bg-gradient-to-r from-green-300 h-screen overflow-hidden" data-testid="Vistcard">
+  <div className="flex flex-col bg-contain bg-rigth bg-fixed h-screen overflow-hidden bg-[url('./img/moutainStyle_4.png')]" data-testid="Vistcard">
+
     <div>
 
       <div className="flex items-center"> 
@@ -51,7 +52,13 @@ const Vistcard: FC<VistcardProps> = () => (
 
     <div className='basis-6/12 relative'>
       <div className='absolute bottom-1'>
-        <h1 className="animate-slide whitespace-nowrap text-gray-900 font-bold text-6xl">Full Stack Developer</h1>
+        <h1 className="
+            animate-slide whitespace-nowrap 
+            text-gray-900 font-bold 
+            text-6xl 
+            drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          Full Stack Developer
+        </h1>
       </div>
     </div>
     <div className='basis-5/12 ml-2 text-gray-900 font-bold text-1xl text-left'>

@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import moutainStyle3 from '../../img/moutainStyle_3.png'
 
 interface ProjectpageProps {
   projectName: String;
@@ -11,7 +12,7 @@ interface ProjectpageProps {
 
 
 const Projectpage: FC<ProjectpageProps> = (props) => (
-<div className='flex flex-col'>
+<div className='flex flex-col bg-contain bg-rigth bg-fixed' style={{ backgroundImage: `url(${moutainStyle3})`, }}>
   <div className='flex flex-col items-center '>
     <button type="button" className="
       flex items-center

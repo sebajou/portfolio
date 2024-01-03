@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx,png}",
   ],
   theme: {
     fontFamily: {
@@ -16,6 +16,9 @@ module.exports = {
         'bluegreen': '#55FAAD',
         'orangepink': '#FA7E3C',
         'flashygreen': '#37FA4D',
+      },
+        backgroundimage:{
+           'mountainStyle_4': "url('/img/moutainStyle_4_svg.svg')",
       },
       animation: {
         slide: "slide 8s linear infinite",
