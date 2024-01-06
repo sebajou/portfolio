@@ -27,7 +27,7 @@ const Presentation: FC<PresentationProps> = () => (
             width="135" height="215" stroke-width="1000"
             viewBox="0 0 335 395">
             <path id="path881"
-        fill="#86EFAC" stroke="black" stroke-width="4"
+        fill="#FB7A4C" stroke="black" stroke-width="4"
         d="M 76.02,330.65
            C 76.49,328.08 79.28,320.88 82.21,314.64
              92.72,292.26 94.27,288.46 97.38,277.28

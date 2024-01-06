@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import moutainStyle3 from '../../img/moutainStyle_3.png'
+
 
 interface ProjectpageProps {
   projectName: String;
@@ -12,13 +12,13 @@ interface ProjectpageProps {
 
 
 const Projectpage: FC<ProjectpageProps> = (props) => (
-<div className='flex flex-col bg-contain bg-rigth bg-fixed' style={{ backgroundImage: `url(${moutainStyle3})`, }}>
+<div className='flex flex-col bg-contain bg-rigth bg-fixed'>
   <div className='flex flex-col items-center '>
     <button type="button" className="
       flex items-center
       w-full m-1 py-1 px-2 
       justify-center  text-white text-center text-base font-semibold
-      bg-green-200 focus:ring-green-500 focus:ring-offset-gray-200
+      bg-orange200 focus:ring-orange500 focus:ring-offset-gray-200
       transition ease-in duration-200  shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 
       rounded-lg"
     >
@@ -41,7 +41,7 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
       {props.projectSkills.map((skill) => {
         return <span className="
           inline-block 
-          bg-green-200 
+          bg-orange200 
           rounded-full 
           text-sm font-semibold text-gray-700
           px-3 py-1 mr-2 mb-2">#{skill}</span>
@@ -55,7 +55,7 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
             w-full
             m-1 py-1 px-2 
             max-w-md 
-            bg-green-300 hover:bg-green-700 
+            bg-orange300 hover:bg-orange700 
             focus:ring-gray-500 focus:ring-offset-gray-200 
             text-white text-center text-base font-semibold
             transition ease-in duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 
@@ -77,7 +77,7 @@ const Projectpage: FC<ProjectpageProps> = (props) => (
         w-full
         m-1 py-1 px-2 
         max-w-md 
-        bg-green-300 hover:bg-green-700 
+        bg-orange300 hover:bg-orange700 
         focus:ring-gray-500 focus:ring-offset-gray-200 
         text-white text-center text-base font-semibold
         transition ease-in duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 

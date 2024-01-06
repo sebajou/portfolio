@@ -12,6 +12,11 @@ module.exports = {
     extend: { 
       colors: {
         'bluelagoon': '#61FAF3',
+        'orange800': '#CD4B01',
+        'orange700': '#ED520D',
+        'orange500': '#FB6834',
+        'orange300': '#FB7E59',
+        'orange200': '#FCD0AB',
         'pinklight': '#FA3A75',
         'bluegreen': '#55FAAD',
         'orangepink': '#FA7E3C',
