@@ -10,8 +10,13 @@
     font-family: "monospace";
   }
 
-  p,a  {
+  h4 {
     font-size: text-sm;
+    font-family: "Fira_Code";
+  }
+
+  p,a  {
+    font-size: "text-1xl, sm: text-3xl";
     font-family: "monospace";
   }
 

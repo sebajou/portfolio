@@ -61,7 +61,7 @@ const Vistcard: FC<VistcardProps> = () => (
         </h1>
       </div>
     </div>
-    <div className='basis-5/12 ml-2 text-gray-900 font-bold text-1xl text-left'>
+    <div className='basis-5/12 ml-2 text-white font-bold text-1xl text-left'>
       <h2 className='mx-1'>Node.js Back End Developer</h2>
       <h2 className='mx-1'>Python Back End Developer</h2>
       <h2 className='mx-1'>Angular Front End Developer</h2>
