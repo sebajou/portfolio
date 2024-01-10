@@ -10,20 +10,22 @@ Object.keys(projectsJson).forEach(function(innerAttr, index) {
 });
 
 const Vistcard: FC<VistcardProps> = () => (
-  <div className="flex flex-col bg-contain bg-rigth bg-fixed h-screen overflow-hidden bg-[url('./img/moutainStyle_4.png')]" data-testid="Vistcard">
+  <div className="flex flex-col bg-cover md:bg-contain bg-rigth bg-fixed h-screen overflow-hidden bg-[url('./img/moutainStyle_4.png')]" data-testid="Vistcard">
 
     <div>
 
       <div className="flex items-center"> 
           <hr className="flex-grow border-t border-black ml-4"/> 
           <span className="px-3"> 
-            <p><HashLink smooth to={'/presentation#presentation'}>Presentation </HashLink></p>
+            <p><HashLink 
+                  className='hover:font-bold active:font-bold focus:font-bold' 
+                  smooth to={'/presentation#presentation'}>Presentation </HashLink></p>
           </span> 
       </div> 
       <div className="flex items-center"> 
           <hr className="flex-grow border-t border-black ml-4"/> 
           <span className="px-3"> 
-            <p><HashLink smooth to={"/projects#projects"}>Projects </HashLink></p>
+            <p><HashLink className='hover:font-bold active:font-bold focus:font-bold' smooth to={"/projects#projects"}>Projects </HashLink></p>
           </span> 
       </div> 
       {Object.values(projectsJson).map((project) => {
@@ -31,7 +33,7 @@ const Vistcard: FC<VistcardProps> = () => (
           <div className="flex items-center"> 
             <hr className="flex-grow border-t border-black ml-4"/> 
             <span className="px-3"> 
-              <p><HashLink smooth to={`/projects#${project.title}`}>{project.title} </HashLink></p>
+              <p><HashLink className='hover:font-bold active:font-bold focus:font-bold' smooth to={`/projects#${project.title}`}>{project.title} </HashLink></p>
             </span> 
           </div> 
           )})
@@ -39,13 +41,13 @@ const Vistcard: FC<VistcardProps> = () => (
         <div className="flex items-center"> 
             <hr className="flex-grow border-t border-black ml-4"/> 
             <span className="px-3"> 
-              <p><HashLink smooth to={"/services#services"}>Services </HashLink></p>
+              <p><HashLink className='hover:font-bold active:font-bold focus:font-bold' smooth to={"/services#services"}>Services </HashLink></p>
             </span> 
         </div> 
         <div className="flex items-center"> 
             <hr className="flex-grow border-t border-black ml-4"/> 
             <span className="px-3"> 
-              <p><HashLink smooth to={'/resumes#resumes'}>Resumes </HashLink></p>
+              <p><HashLink className='hover:font-bold active:font-bold focus:font-bold' smooth to={'/resumes#resumes'}>Resumes </HashLink></p>
             </span> 
         </div>       
       </div>

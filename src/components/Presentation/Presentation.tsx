@@ -1,14 +1,31 @@
-import React, { FC } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 
 interface PresentationProps {}
 
-const Presentation: FC<PresentationProps> = () => (
+const Presentation: FC<PresentationProps> = () => {
 
+  const colors = ['mountain-100', 'mountain-200', 'mountain-300', 'mountain-400', 'mountain-500', 'mountain-600', 'mountain-700', 'mountain-800', 'mountain-900'];
+  const [currentColor, setCurrentColor] = useState<string>(colors[0]);
 
+  useEffect(() => {
+    let index = 0;
+    const intervalId = setInterval(() => {
+      index = (index + 1) % colors.length;
+      setCurrentColor(colors[index]);
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
+  return (
   <div className="flex flex-col h-screen m-5" data-testid="Presentation" id="presentation">
-    <div className='basis-4/12 '>
-      <h1 className='m-4 text-gray-900 font-bold text-6xl text-left'>
-        Hi! Many thinks to be on this page.
+    <div className='basis-4/12'>
+      <h1 className={`m-4 text-gray-900 
+                      text-${currentColor}
+                      font-bold text-6xl text-left`}>
+        Hi! Many thinks to be on this page. 
       </h1>
     </div>
     <div className='basis-8/12'>
@@ -120,6 +137,6 @@ const Presentation: FC<PresentationProps> = () => (
       </div>
     </div>
   </div>
-);
+);};
 
 export default Presentation;

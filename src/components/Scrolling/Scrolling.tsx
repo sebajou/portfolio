@@ -15,8 +15,6 @@ Object.keys(projectsJson).forEach(function(innerAttr, index) {
 
 const Scrolling: FC<ScrollingProps> = () => (
   <div className='' data-testid="Scrolling">
-
-
         <div className="basis-1">
           <Presentation/>
         </div >
