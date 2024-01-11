@@ -31,7 +31,7 @@ const Presentation: FC<PresentationProps> = () => {
     <div className='basis-8/12'>
       <em className='text-2xl md:text-3xl text-left'>My name is <strong>Sebastien Jourdan.</strong></em>
       <div className='flex flex-row'>
-        <div className='md:basis-8/12 m-3'>
+        <div className=' basis-1 md:basis-8/12 m-3'>
           <p className='text-base md:text-lg text-left align-middle'>
             I am a Full Stack Developer proficient in the MEAN stack as well as Python for backend development. I have experience working with both microservice and monolithic architectures. Alongside my expertise in development, I have a strong passion for Machine Learning, particularly in Natural Language Processing (NLP), specifically RAG Language Model (RAG LLM).
           </p>

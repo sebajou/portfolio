@@ -1,4 +1,5 @@
 import './App.css';
+import './tailwind.css'
 import Visitcard from './components/Visitcard/Visitcard';
 import Scrolling from './components/Scrolling/Scrolling';
 

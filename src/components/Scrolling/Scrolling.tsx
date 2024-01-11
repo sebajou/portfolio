@@ -18,9 +18,13 @@ const Scrolling: FC<ScrollingProps> = () => (
         <div className="basis-1">
           <Presentation/>
         </div >
-        <div className="" id="projects">
-          {Object.values(projectsJson).map((project) => {
-          return (
+        <div className="flex flew-row" id="projects">
+          <div className="basis-1/12">
+            <h1 className='rotate-90 text-3xl'>Project</h1>
+          </div>
+          <div className="basis-11/12">
+            {Object.values(projectsJson).map((project) => {
+            return (
               <div className="basis-1 h-auto lg:h-[98vh] border rounded-lg border-gray-600 m-2 p-2" id={project.title}>
                 <div className="p-2">
                   <Projectpage 
@@ -32,9 +36,10 @@ const Scrolling: FC<ScrollingProps> = () => (
                     linkWebsite={project.linkWebsite}
                     />
                 </div>
-            </div>
-            )})
-          }
+              </div>
+              )})
+            }
+          </div>
         </div>
 
         <div className="basis-1">

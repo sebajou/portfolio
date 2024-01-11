@@ -10,7 +10,7 @@ Object.keys(projectsJson).forEach(function(innerAttr, index) {
 });
 
 const Vistcard: FC<VistcardProps> = () => (
-  <div className="flex flex-col bg-cover md:bg-contain bg-rigth bg-fixed h-screen overflow-hidden bg-[url('./img/moutainStyle_4.png')]" data-testid="Vistcard">
+  <div className="flex flex-col bg-cover md:bg-contain bg-rigth bg-fixed h-screen overflow-hidden bg-[url('./img/moutainStyle_4.png')] rounded-lg m-1 mb-5" data-testid="Vistcard">
 
     <div>
 
