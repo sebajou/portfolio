@@ -50,14 +50,14 @@ const Projectpage: FC<ProjectpageProps> = (props) => {
       h-48 md:h-auto md:w-48 
       bg-contain bg-no-repeat md:bg-center 
       invisible md:visible" 
-    style={{ backgroundImage: `url(${props.projectUrlImage})`, }} title="Microservice architecture">
+    style={{ backgroundImage: `url(${props.projectUrlImage})`}} title="Microservice architecture">
     </div>
     <div className="md:basis-8/12 justify-between leading-normal w-full">
       <p className="grow w-full text-gray-700 text-base p-4">{props.projectSummary}</p>
     </div>
   </div>
-  <div className="flex flex-col basis-2/12 w-full">
-    <div className="grow px-6 pt-4 pb-2">
+  <div className="flex flex-col basis-2/12 w-full justify-center">
+    <div className="grow justify-center px-6 pt-4 pb-2">
       {props.projectSkills.map((skill) => {
         return <span className="
           inline-block 
@@ -68,19 +68,20 @@ const Projectpage: FC<ProjectpageProps> = (props) => {
           px-3 py-1 mr-2 mb-2">#{skill}</span>
       })}
     </div>
-    <div className="flex flex-col md:flex-row grow-0 justify-center">
+    <div className="grow flex flex-col items-center justify-center px-6 pt-4 pb-2">
       {props.linksGithub.map((linkGithub) => {
           return(
           <button type="button" className="
-            flex justify-center items-center
-            w-full
-            m-1 py-1 px-2 
-            max-w-md 
+            flex
+            justify-center items-center
+            whitespace-nowrap
+            text-white 
+            text-sm font-semibold
+            px-3 py-1 mr-2 mb-2
             bg-mountain-600
-            text-white
             hover:bg-mountain-700 
             focus:ring-gray-500 focus:ring-offset-gray-200 
-            text-center text-base font-semibold
+            text-center
             transition ease-in duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 
             rounded-lg"
           >
@@ -96,12 +97,13 @@ const Projectpage: FC<ProjectpageProps> = (props) => {
       }
       {props.linkWebsite ? 
       <button type="button" className="
-        flex justify-center items-center
-        w-full
-        m-1 py-1 px-2 
-        max-w-md 
+        inline-block
+        text-white 
+        whitespace-nowrap
+        text-sm font-semibold
+        px-3 py-1 mr-2 mb-2
+        justify-center items-center
         bg-mountain-600
-        text-white
         hover:bg-mountain-700 
         focus:ring-gray-500 focus:ring-offset-gray-200 
         text-center text-base font-semibold

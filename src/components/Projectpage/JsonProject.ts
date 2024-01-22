@@ -1,4 +1,4 @@
-export const listProjects = {
+export const jsonProjects = {
     wordwidespring: {
       title: "WorldWideSpring",
       summary: `

@@ -1,16 +1,11 @@
 import React, { FC } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { listProjects } from '../Projectpage/ListProject'
+import { jsonProjects } from '../Projectpage/JsonProject'
 
 interface VistcardProps {}
-const projectsJson = listProjects;
-const arr : any[] = []
-Object.keys(projectsJson).forEach(function(innerAttr, index) {
-  arr.push(innerAttr[index]);
-});
 
 const Vistcard: FC<VistcardProps> = () => (
-  <div className="flex flex-col bg-cover md:bg-contain bg-rigth bg-fixed h-screen overflow-hidden bg-[url('./img/moutainStyle_4.png')] rounded-lg m-1 mb-5" data-testid="Vistcard">
+  <div className="flex flex-col bg-cover md:bg-contain bg-rigth bg-fixed h-screen overflow-hidden bg-[url('./img/moutainStyle_4.png')] rounded-lg m-2" data-testid="Vistcard">
 
     <div>
 
@@ -28,7 +23,7 @@ const Vistcard: FC<VistcardProps> = () => (
             <p><HashLink className='hover:font-bold active:font-bold focus:font-bold' smooth to={"/projects#projects"}>Projects </HashLink></p>
           </span> 
       </div> 
-      {Object.values(projectsJson).map((project) => {
+      {Object.values(jsonProjects).map((project) => {
         return (
           <div className="flex items-center"> 
             <hr className="flex-grow border-t border-black ml-4"/> 
