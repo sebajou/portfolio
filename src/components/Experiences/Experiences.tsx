@@ -14,10 +14,13 @@ interface ExperiencesProps {
 const Experiences: FC<ExperiencesProps> = (props) => {
 
   const [isShown, setIsShown] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
 
   const handleClick = () => {
     setIsShown(current => !current);
+    setIsRotated(!isRotated);
   };
+
 
   
   return (
@@ -37,6 +40,7 @@ const Experiences: FC<ExperiencesProps> = (props) => {
           <div className='flew flew-row mb-2'>
             <div className="grow font-bold text-xl top-0"><strong>{props.experienceTitle} at {props.experienceCompany}</strong></div>
             <div className='text-mountain-100 italic'>from <span className='date'>{props.experienceDate.start.toLocaleDateString()}</span> until {props.experienceDate.end.toLocaleDateString()}</div>
+            <div className='flex justify-center items-center'><svg className={`transform ${isRotated ? 'rotate-90' : 'rotate-0'}`} xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" width="29" height="51" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 298 511.93"><path fill-rule="nonzero" d="M70.77 499.85c-16.24 16.17-42.53 16.09-58.69-.15-16.17-16.25-16.09-42.54.15-58.7l185.5-185.03L12.23 70.93c-16.24-16.16-16.32-42.45-.15-58.7 16.16-16.24 42.45-16.32 58.69-.15l215.15 214.61c16.17 16.25 16.09 42.54-.15 58.7l-215 214.46z"/></svg></div>
           </div>
         </button>
       </div>

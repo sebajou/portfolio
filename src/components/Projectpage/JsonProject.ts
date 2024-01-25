@@ -19,7 +19,7 @@ export const jsonProjects = {
       The github page describe how to build an yogurt maker with esp32 C3, a sht40 and bme280 sensor and a relay. 
       Program on the esp32 is write in microPython. 
       `,
-      imageUrl: "",
+      imageUrl: "./img/yahourtier.jpeg",
       skills: ["IoT", "MicroPython", "MicroController"],
       linksGithub: ["esp32_yogurt_maker"],
       linkWebsite: "",
@@ -29,7 +29,7 @@ export const jsonProjects = {
       summary: `
       The present page is made in React and TailwindCSS. 
       `,
-      imageUrl: "",
+      imageUrl: "./img/moutainStyle_4.png",
       skills: ["React", "Tailwind"],
       linksGithub: ["portfolio"],
       linkWebsite: "https://sebajou.github.io/portfolio",

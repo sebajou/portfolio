@@ -17,17 +17,19 @@ interface EducationsProps {
 const Educations: FC<EducationsProps> = (props) => {
 
   const [isShown, setIsShown] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
 
   const handleClick = () => {
     setIsShown(current => !current);
+    setIsRotated(!isRotated);
   };
 
   return (
   <div data-testid="Educations" id={`${props.educationTitle}`}>
     <div className='flex flex-col bg-contain bg-rigth bg-fixed'>
-      <div className='flex flex-col items-center '>
+      <div className='flex flex-col'>
         <button type="button" className={`
-          flex items-center
+          flex items-center content-center
           w-full m-1 py-1 px-2 
           justify-center  text-center text-base font-semibold
           bg-mountain-900
@@ -37,9 +39,10 @@ const Educations: FC<EducationsProps> = (props) => {
           rounded-lg`}
           onClick={handleClick}
         >
-          <div className='flew flew-row mb-2'>
+          <div className='flew mb-2 justify-center items-center content-center'>
             <div className="grow font-bold text-xl top-0"><strong>{props.educationTitle} with {props.educationSchool}</strong></div>
             <div className='text-mountain-100 italic'>from <span className='date'>{props.educationDate.start.toLocaleDateString()}</span> until {props.educationDate.end.toLocaleDateString()}</div>
+            <div className='flex justify-center items-center'><svg className={`transform ${isRotated ? 'rotate-90' : 'rotate-0'}`} xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" width="29" height="51" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 298 511.93"><path fill-rule="nonzero" d="M70.77 499.85c-16.24 16.17-42.53 16.09-58.69-.15-16.17-16.25-16.09-42.54.15-58.7l185.5-185.03L12.23 70.93c-16.24-16.16-16.32-42.45-.15-58.7 16.16-16.24 42.45-16.32 58.69-.15l215.15 214.61c16.17 16.25 16.09 42.54-.15 58.7l-215 214.46z"/></svg></div>
           </div>
         </button>
       </div>
