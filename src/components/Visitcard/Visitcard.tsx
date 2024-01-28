@@ -47,7 +47,7 @@ const Vistcard: FC<VistcardProps> = () => (
         </div>       
       </div>
 
-    <div className='basis-6/12 relative'>
+    <div className='basis-5/12 relative'>
       <div className='absolute bottom-1'>
         <h1 className="
             animate-slide whitespace-nowrap 
@@ -70,6 +70,11 @@ const Vistcard: FC<VistcardProps> = () => (
     </div>
     <div className='basis-1/12'>
       <h3 className='m-1 text-right'>Based at Salt Lake City</h3>
+    </div>
+    <div className='basis-1/12'>
+      <h3 className='flex justify-between m-5'>
+        Find me on <a className="text-white hover:text-mountain-400" href={`https://www.linkedin.com/in/sebastien-jourdan-2ba79860/`}> Linkedin </a>or on<a className="text-white hover:text-mountain-400" href={`https://www.github.com/sebajou/`}> Github </a>
+      </h3>
     </div>
   </div>
 );

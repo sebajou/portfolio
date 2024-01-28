@@ -20,7 +20,7 @@ const Presentation: FC<PresentationProps> = () => {
   }, []);
 
   return (
-  <div className="flex flex-col min-h-screen lg:h-screen m-5" data-testid="Presentation" id="presentation">
+  <div className="flex flex-col lg:h-screen m-5" data-testid="Presentation" id="presentation">
     <div className='basis-4/12'>
       <h1 className={`m-4 text-gray-900 
                       text-${currentColor}

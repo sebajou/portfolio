@@ -16,7 +16,7 @@ const Scrolling: FC<ScrollingProps> = () => (
         <div className="basis-1" id="projects">
           {Object.values(jsonProjects).map((project) => {
           return (
-            <div className='flex flex-row  min-h-screen lg:h-screen m-5'>
+            <div className='flex flex-row lg:h-screen m-5'>
               <div className="min-h-screen lg:h-[98vh] border rounded-lg border-gray-600 p-2 w-[95%]" id={project.title}>
                 <div className="p-2">
                   <Projectpage 
