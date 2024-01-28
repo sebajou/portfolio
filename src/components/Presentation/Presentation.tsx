@@ -25,7 +25,7 @@ const Presentation: FC<PresentationProps> = () => {
       <h1 className={`m-4 text-gray-900 
                       text-${currentColor}
                       font-bold text-6xl text-left`}>
-        Hi! Many thinks to be on this page. 
+        Hi! Many thanks to be on this page. 
       </h1>
     </div>
     <div className='basis-8/12'>

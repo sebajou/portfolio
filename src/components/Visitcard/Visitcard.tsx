@@ -2,6 +2,11 @@ import React, { FC } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { jsonProjects } from '../Projectpage/JsonProject'
 
+
+
+// TODO: Put a marge at the bottom of the Visitcard component. 
+// TODO: Improve estetique est ergonomie of Visitcard. 
+
 interface VistcardProps {}
 
 const Vistcard: FC<VistcardProps> = () => (
@@ -80,3 +85,4 @@ const Vistcard: FC<VistcardProps> = () => (
 );
 
 export default Vistcard;
+

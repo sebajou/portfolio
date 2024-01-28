@@ -1,6 +1,12 @@
 import React, { FC, useState, useEffect } from 'react';
 
 
+
+
+// TODO: Put the skills and links at the bottom of the component.
+// TODO: Make the images appears
+// TODO: Improve text and contant of project. 
+
 interface ProjectpageProps {
   projectName: String;
   projectSummary: String;

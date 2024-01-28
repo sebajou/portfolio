@@ -16,8 +16,16 @@ export const jsonProjects = {
       title: "Yogurtmaker",
       summary: `
       This IoT project is base on esp32. 
-      The github page describe how to build an yogurt maker with esp32 C3, a sht40 and bme280 sensor and a relay. 
-      Program on the esp32 is write in microPython. 
+
+      This project is a home made DIY Yogurt maker realise with:
+      esp microcontroler, m5stack esp32 C3 Mate.
+      environement sensor, m5stack ENVIV with a SHT40 sensor and BME280 sensor for temperature and more.
+      relay, 3A relay unit, for provide or cut current for heater
+      a bedside lamp with a Infra Red bulb for heating
+      a camping cooler box, sensor, heater and yogurt will go inside
+      and a bit of micropython code.
+
+      A Yogurt is made by melt one yogurt for one liter of milk, then by heat it at 40°C during 10 ti 15 hours. This is what this project do.
       `,
       imageUrl: "./img/yahourtier.jpeg",
       skills: ["IoT", "MicroPython", "MicroController"],
