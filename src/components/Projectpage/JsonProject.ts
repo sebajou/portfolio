@@ -41,5 +41,31 @@ export const jsonProjects = {
       skills: ["React", "Tailwind"],
       linksGithub: ["portfolio"],
       linkWebsite: "https://sebajou.github.io/portfolio",
+    }, 
+    Pytickdo: {
+      title: "Pytickdo ticket management for coders",
+      summary: `
+      Pytickdo is a project of a ticket manager (like Jira of Trello). 
+This ticket manager project want to create a communautary ticket manager, handable by a Web App GUI like by Python CLI, abble to interact with a forum, Git, Github, README.md, JetBrain IDE, Visual Studio Code IDE, Slack...
+A Python CLI, a Python Back End and React front GUI will allow to create and manage project's ticket in a agile way or in any project way. 
+
+Created and modified ticket will allow to directly follow ticket ongoing on project's README.md (and will be potentially push on GitHub, GitLab...). 
+
+This project is dedicace for open source project, little structure or solo developer, to help them to drive their projects and allow community to openly follow the advancment and participate by coding, comment, vote... 
+      `,
+      imageUrl: "",
+      skills: ["Python", "Mardown"],
+      linksGithub: ["pytickdo"],
+      linkWebsite: "",
+    }, 
+    TTDD: {
+      title: "Test the Test Driven Design",
+      summary: `
+      TTDD is example of tutorial to lead learner to make TDD. The learner is abble to following the tutorial in autonomy. Automatic test, test the test created by the learner and monitor the correct sequence of step in the spiritual way of Test Driven Design. 
+      `,
+      imageUrl: "https://marsner.com/wp-content/uploads/test-driven-development-TDD.png",
+      skills: ["Python", "Pytest"],
+      linksGithub: ["TTDD"],
+      linkWebsite: "",
     }
   };
