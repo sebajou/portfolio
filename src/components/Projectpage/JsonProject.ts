@@ -52,7 +52,7 @@ Thank to a github actions pipe, Docker files are build and push on docker hub. T
       imageUrl: "",
       skills: ["Python", "FastAPI", "Stripe", "React", "JavaScript", "AWS"],
       linksGithub: [],
-      linkWebsite: "learningfrenchwitheugenie.com",
+      linkWebsite: "https://learningfrenchwitheugenie.com",
     }, 
     TTDD: {
       title: "Test the Test Driven Design",
