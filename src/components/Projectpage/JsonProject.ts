@@ -43,20 +43,16 @@ export const jsonProjects = {
       linkWebsite: "https://sebajou.github.io/portfolio",
     }, 
     Pytickdo: {
-      title: "Pytickdo ticket management for coders",
+      title: "Learning french with Eugénie",
       summary: `
-      Pytickdo is a project of a ticket manager (like Jira of Trello). 
-This ticket manager project want to create a communautary ticket manager, handable by a Web App GUI like by Python CLI, abble to interact with a forum, Git, Github, README.md, JetBrain IDE, Visual Studio Code IDE, Slack...
-A Python CLI, a Python Back End and React front GUI will allow to create and manage project's ticket in a agile way or in any project way. 
-
-Created and modified ticket will allow to directly follow ticket ongoing on project's README.md (and will be potentially push on GitHub, GitLab...). 
-
-This project is dedicace for open source project, little structure or solo developer, to help them to drive their projects and allow community to openly follow the advancment and participate by coding, comment, vote... 
-      `,
+      learningfrenchwitheugenie.com is a website to buy session for learning french for english speaker and mainly for child.  
+This web site is operational and available on this url: learningfrenchwitheugenie.com. It is implemented with a React Front (vite.js, Tailwind css), a FastAPI back end, Stripe is used for payment.
+The app use a mongo database host on Mongo Atlas.  
+Thank to a github actions pipe, Docker files are build and push on docker hub. The github actions push also the project, according to docker compose file on the AWS instance.`,
       imageUrl: "",
-      skills: ["Python", "Mardown"],
-      linksGithub: ["pytickdo"],
-      linkWebsite: "",
+      skills: ["Python", "FastAPI", "Stripe", "React", "JavaScript", "AWS"],
+      linksGithub: [],
+      linkWebsite: "learningfrenchwitheugenie.com",
     }, 
     TTDD: {
       title: "Test the Test Driven Design",
