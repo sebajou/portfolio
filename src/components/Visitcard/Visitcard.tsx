@@ -74,7 +74,7 @@ const Vistcard: FC<VistcardProps> = () => (
       <h2 className='mx-1'>Retreival Augmented Generation Large Langage Model</h2>
     </div>
     <div className='basis-1/12'>
-      <h3 className='m-1 text-right'>Based at Salt Lake City</h3>
+      <h3 className='m-1 text-right'>Based at Pralognan la Vanoise</h3>
     </div>
     <div className='basis-1/12'>
       <h3 className='flex justify-between m-5'>
